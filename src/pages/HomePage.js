@@ -18,12 +18,8 @@ export default function HomePage() {
       <CssBaseline />
       <Container
         sx={{
-          height: "100vh",
-          width: "100vw",
-          // marginRight: "1px",
-          margin: 0,
           padding: 0,
-          boxSizing: "border-box",
+          margin: 0,
         }}
       >
         <Box
@@ -32,10 +28,11 @@ export default function HomePage() {
             display: "flex",
             flexWrap: "wrap",
             width: "98.5vw",
-            height: "100vh",
+            height: "110vh",
             boxSizing: "border-box",
             alignItems: "center",
             justifyContent: "center",
+            gap: "20px",
           }}
         >
           {components.map((el) => (
