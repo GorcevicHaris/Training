@@ -16,7 +16,14 @@ import AdbIcon from "@mui/icons-material/Adb";
 const pages = ["Products", "Pricing", "Blog"];
 const settings = [
   <a
-    style={{ width: "100px", backgroundColor: "orange" }}
+    style={{
+      backgroundColor: "red",
+      textDecoration: "none",
+      width: "100px",
+      height: "100%",
+      fontWeight: "bold",
+      display: "block",
+    }}
     target="_blank"
     href="https://www.instagram.com/harisgorcevic"
   >
