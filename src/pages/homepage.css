@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-.containers{
+/* .containers{
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     background-color: orange;
     display: flex;    
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
-}
+    padding-top: 20px;
+} */
 
 .MuiCard-root {
     width: 350px; /* Set the width you want */
@@ -25,3 +25,4 @@
     height: 350px;
     background-color: aquamarine;
   }
+

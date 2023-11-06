@@ -19,9 +19,11 @@ const settings = [
   <a
     style={{
       textDecoration: "none",
-      width: "100px",
+      width: "100%",
       height: "100%",
       display: "block",
+      margin: 0,
+      padding: 0,
       color: "black",
     }}
     target="_blank"
@@ -76,7 +78,14 @@ function Header() {
             LOGO
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              margin: 0,
+              padding: 0,
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -126,6 +135,8 @@ function Header() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              margin: 0,
+              padding: 0,
             }}
           >
             LOGO
