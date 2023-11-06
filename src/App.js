@@ -16,13 +16,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 const pages = ["Products", "Pricing", "Blog"];
 const settings = [
   <a
-    style={{
-      color: "black",
-      textDecoration: "none",
-      width: "100%",
-      height: "100%",
-      backgroundColor: "red",
-    }}
+    style={{ width: "100px", backgroundColor: "orange" }}
     target="_blank"
     href="https://www.instagram.com/harisgorcevic"
   >
@@ -129,7 +123,12 @@ function ResponsiveAppBar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", backgroundColor: "red" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
@@ -144,7 +143,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="myself.png" />
+                <Avatar />
               </IconButton>
             </Tooltip>
             <Menu
@@ -165,7 +164,7 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
