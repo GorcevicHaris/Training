@@ -8,35 +8,33 @@ import Typography from "@mui/material/Typography";
 import "./homepage.css";
 
 export default function HomePage() {
-  const components = [
-    <div className="containers">
-      <Card>
-        <CardMedia
-          sx={{ height: 330 }}
-          component="img"
-          alt="green iguana"
-          height="140"
-          image="myself.jpg"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Haris
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            People are good
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
-        </CardActions>
-      </Card>
-    </div>,
-  ];
+  const components = [1, 2, 3, 4, 5, 6, 7];
+
   return (
     <div className="containers">
       {components.map((el) => (
-        <div>{el}</div>
+        <Card sx={{ maxWidth: 345, height: 500 }}>
+          <CardMedia
+            sx={{ height: 315 }}
+            component="img"
+            alt="green iguana"
+            height="140"
+            image="myself.jpg"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizard
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
       ))}
     </div>
   );
