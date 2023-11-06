@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-img{
-    width: 300px;
-    height: 300px;
-}
+
 .containers{
     width: 100vw;
     height: 100vh;
     background-color: orange;
     display: flex;    
+    justify-content: center;
+    gap: 20px;
+}
+
+.MuiCard-root {
+    width: 350px; /* Set the width you want */
+    height: 500px; /* Set the height you want */
+    margin: 10px; /* Optional: Add margin to space the cards */
+  }
+.MuiCardMedia-root{
+    height: 330px;
 }
