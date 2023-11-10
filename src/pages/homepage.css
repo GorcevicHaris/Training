@@ -1,19 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container{
+  width: 100vw;
+  height: auto;
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+
 }
 
-
-.MuiCard-root {
-    width: 350px; /* Set the width you want */
-    height: 500px; /* Set the height you want */
-    margin: 10px; /* Optional: Add margin to space the cards */
-  }
-
-  .card{
-    width: 350px;
-    height: 350px;
-    background-color: aquamarine;
-  }
-
+.card{
+  width: 250px;
+  height: 250px;
+  background-color: purple;
+}
