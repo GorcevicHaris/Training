@@ -1,18 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Loyaout from "./pages/Loyaout";
 import ContextFunction from "./pages/Kontext";
+import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 
 function App() {
   console.log("asdasd");
   return (
     <BrowserRouter>
       <ContextFunction>
-        <Loyaout>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-          </Routes>
-        </Loyaout>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <Footer />
       </ContextFunction>
     </BrowserRouter>
   );
