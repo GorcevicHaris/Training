@@ -9,11 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <ContextFunction>
-        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
-        <Footer />
       </ContextFunction>
     </BrowserRouter>
   );

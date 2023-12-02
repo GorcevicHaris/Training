@@ -1,18 +1,43 @@
 .container{
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-color: yellow;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
-
+  display: flex;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .card{
-  width: 250px;
-  height: 250px;
-  background-color: purple;
+  width: 600px;
+  height: 600px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+input{
+  width: 90%;
+  height: 45px;
+  font-size: 25px;
+}
+button{
+  width: 10%;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+.down{
+  width: 80%;
+  background-color: red;
+  height: 30px;
+}
+.delete{
+  background-color: green;
+  width: 40px;
+  height: 40px;
 }
